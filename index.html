@@ -3,45 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Kayque de Moraes Urbano Oliveira, namorado da Ananda Liz Canalha Matias Araujo sem acento</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-
-        h1, h2, h3 {
-            color: #333;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="icon" href="imgs\terry_heman.jpg" type="image/x-icon">
+    <title>Kayque de Moraes Urbano Oliveira</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="atuacao.html">Áreas de Atuação</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
 
     <header>
-        <h1>Portfólio - Seu Nome</h1>
+        <h1 id="nome">Portfólio - Kayque de Moraes Urbano Oliveira
+        </h1>
     </header>
 
     <section id="sobre">
@@ -62,20 +41,35 @@
     <section id="projetos">
         <h2>Projetos Destacados</h2>
         <ul>
-            <li><a href="#">Nome do Projeto 1:</a> Breve descrição do projeto e seu impacto.</li>
-            <li><a href="#">Nome do Projeto 2:</a> Breve descrição do projeto e suas conquistas.</li>
-            <li><a href="#">Nome do Projeto 3:</a> Breve descrição do projeto e tecnologias utilizadas.</li>
+            <li><a href="URL_do_Projeto_1">Nome do Projeto 1:</a> Breve descrição do projeto e seu impacto.</li>
+            <li><a href="URL_do_Projeto_2">Nome do Projeto 2:</a> Breve descrição do projeto e suas conquistas.</li>
+            <li><a href="URL_do_Projeto_3">Nome do Projeto 3:</a> Breve descrição do projeto e tecnologias utilizadas.</li>
         </ul>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
         <ul>
-            <li><strong>LinkedIn:</strong> <a href="#">Seu Perfil no LinkedIn</a></li>
-            <li><strong>E-mail:</strong> <a href="mailto:seu@email.com">seu@email.com</a></li>
-            <li><strong>Blog:</strong> <a href="#">Seu Blog, se aplicável</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kayque-moraes/">https://www.linkedin.com/in/kayque-moraes/</a></li>
+            <li><strong>E-mail:</strong> <a href="kayquedemorais13@gmail.com">kayquedemorais13@gmail.com</a></li>
         </ul>
     </section>
-
+    <script>
+        // Obtém a referência do elemento pelo ID
+        var nomeElemento = document.getElementById('nome');
+    
+        // Adiciona um ouvinte de evento para o mouseover (quando o mouse passa por cima)
+        nomeElemento.addEventListener('mouseover', function() {
+            // Muda a cor de fundo para uma cor desejada
+            nomeElemento.style.backgroundColor = '#007BFF'; // Você pode substituir com a cor desejada
+            nomeElemento.style.transition = 'background-color 0.3s ease'; // Adiciona uma transição suave
+        });
+    
+        // Adiciona um ouvinte de evento para o mouseout (quando o mouse deixa a área)
+        nomeElemento.addEventListener('mouseout', function() {
+            // Restaura a cor de fundo original
+            nomeElemento.style.backgroundColor = '';
+        });
+    </script>
 </body>
 </html>
